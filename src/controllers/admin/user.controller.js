@@ -109,7 +109,7 @@ async forgotPassword(req, res) {
             });
         
         let userResponce = {};
-        let result = makeApiResponce('Password Update Successfully', 1, OK, userResponce);
+        let result = makeApiResponce('Check your email for instructions on resetting your password', 1, OK, userResponce);
         return res.json(result);
 
     }catch(err){
